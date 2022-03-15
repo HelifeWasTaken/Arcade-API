@@ -44,5 +44,5 @@ var searchData=
   ['k_5fx_108',['K_X',['../namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961acb9b031f0ecc101ff0ad30e3db5f336f',1,'arcade::api']]],
   ['k_5fy_109',['K_Y',['../namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961a714305e1bc61322fb224d580dba8054d',1,'arcade::api']]],
   ['k_5fz_110',['K_Z',['../namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961a0a6518a6737868b4d14cfcb82c9a53a2',1,'arcade::api']]],
-  ['keycode_111',['KeyCode',['../namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961',1,'arcade::api']]]
+  ['keycode_111',['KeyCode',['../namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961',1,'arcade::api::KeyCode()'],['../namespacearcade.html#adeaaf19150fe91b15008dabbf52f42d1',1,'arcade::KeyCode()']]]
 ];

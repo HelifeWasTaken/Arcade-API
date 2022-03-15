@@ -174,5 +174,5 @@ namespace arcade::api
 
 namespace arcade
 {
-  using KeyCode = api::KeyCode;
+    using KeyCode = api::KeyCode;
 }

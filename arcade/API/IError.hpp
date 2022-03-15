@@ -33,7 +33,7 @@ namespace arcade
      * to make it look like a bit more standard
      *
      */
-    using Error = IError;
+    using Error = api::IError;
 } // namespace arcade
 
 /**
@@ -41,7 +41,7 @@ namespace arcade
  *
  */
 #define ARCADE_ERROR_CLASS_IMPL                    \
-    class Error : public IError                    \
+    class Error : public api::IError               \
     {                                              \
       private:                                     \
         const std::string _error;                  \

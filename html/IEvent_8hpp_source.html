@@ -163,7 +163,12 @@ $(function() {
 <div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="classarcade_1_1api_1_1IEvent.html#a3719ca58b42365258ad623a74ab32196">  170</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1api_1_1IEvent.html#a3719ca58b42365258ad623a74ab32196">~IEvent</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    };</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;} <span class="comment">// namespace arcade</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;} <span class="comment">// namespace arcade::api</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacearcade.html">arcade</a></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="namespacearcade.html#adeaaf19150fe91b15008dabbf52f42d1">  177</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961">KeyCode</a> = <a class="code" href="namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961">api::KeyCode</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
 <div class="ttc" id="aclassarcade_1_1api_1_1IButton_html"><div class="ttname"><a href="classarcade_1_1api_1_1IButton.html">arcade::api::IButton</a></div><div class="ttdoc">API Implementation of IButton.</div><div class="ttdef"><b>Definition:</b> IEvent.hpp:66</div></div>
 <div class="ttc" id="aclassarcade_1_1api_1_1IButton_html_a3cf536c7777a9ac37f70a8e4dfe13d2c"><div class="ttname"><a href="classarcade_1_1api_1_1IButton.html#a3cf536c7777a9ac37f70a8e4dfe13d2c">arcade::api::IButton::getState</a></div><div class="ttdeci">virtual State getState() const =0</div><div class="ttdoc">Get the state of the button.</div></div>
 <div class="ttc" id="aclassarcade_1_1api_1_1IButton_html_a45f2546427d7c33c576c1bf1faac4a72"><div class="ttname"><a href="classarcade_1_1api_1_1IButton.html#a45f2546427d7c33c576c1bf1faac4a72">arcade::api::IButton::setState</a></div><div class="ttdeci">virtual void setState(const State state)=0</div><div class="ttdoc">Set the state of the button.</div></div>
@@ -226,6 +231,7 @@ $(function() {
 <div class="ttc" id="anamespacearcade_1_1api_html_a247b90982e5e013ecfbf16de88653961af9dbae674c8026bde917f4861ba6e125"><div class="ttname"><a href="namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961af9dbae674c8026bde917f4861ba6e125">arcade::api::K_F</a></div><div class="ttdeci">@ K_F</div><div class="ttdef"><b>Definition:</b> IEvent.hpp:20</div></div>
 <div class="ttc" id="anamespacearcade_1_1api_html_a247b90982e5e013ecfbf16de88653961afa5c5260ec14d97c84f83c1cf5eabc65"><div class="ttname"><a href="namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961afa5c5260ec14d97c84f83c1cf5eabc65">arcade::api::K_M</a></div><div class="ttdeci">@ K_M</div><div class="ttdef"><b>Definition:</b> IEvent.hpp:27</div></div>
 <div class="ttc" id="anamespacearcade_1_1api_html_a247b90982e5e013ecfbf16de88653961aff27c58729b94122b17d7f15b280be25"><div class="ttname"><a href="namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961aff27c58729b94122b17d7f15b280be25">arcade::api::K_Q</a></div><div class="ttdeci">@ K_Q</div><div class="ttdef"><b>Definition:</b> IEvent.hpp:31</div></div>
+<div class="ttc" id="anamespacearcade_html"><div class="ttname"><a href="namespacearcade.html">arcade</a></div><div class="ttdef"><b>Definition:</b> ICanvas.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
