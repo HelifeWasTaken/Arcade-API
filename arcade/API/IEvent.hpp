@@ -62,6 +62,14 @@ public:
   enum State { IDLE, PRESSED, RELEASED };
 
   /**
+   * @brief Set the state of the button
+   *
+   * @param state The new state of the button
+   * 
+   */
+  virtual void setState(const State state) = 0;
+
+  /**
    * @brief Check if the button was pressed
    *
    * @return true The key is currently pressed
@@ -78,6 +86,12 @@ public:
    *
    */
   virtual bool isKeyReleased() const = 0;
+
+  /**
+   * @brief Destroy the IButton object
+   * 
+   */
+  virtual ~IButton() = default;
 };
 
 /**
@@ -87,6 +101,15 @@ public:
 class IEvent {
 public:
   /**
+   * @brief Set the state of the button
+   *
+   * @param KeyCode The keycode of the button
+   * @param State The new state of the button
+   * 
+   */
+  virtual void setState(const KeyCode code, const IButton::State state) = 0;
+
+  /**
    * @brief Check if the event is a key event
    *        and if it is currently pressed at the moment
    *
@@ -95,7 +118,7 @@ public:
    * @return false The key is not currently pressed
    *
    */
-  virtual bool isKeyPressed(const KeyCode &code) const = 0;
+  virtual bool isKeyPressed(const KeyCode code) const = 0;
 
   /**
    * @brief Check if the event is a key event
@@ -107,7 +130,7 @@ public:
    * @return false The key is not currently released
    *
    */
-  virtual bool isKeyReleased(const KeyCode &code) const = 0;
+  virtual bool isKeyReleased(const KeyCode code) const = 0;
 
   /**
    * @brief Check has sent a close signal
