@@ -104,6 +104,12 @@ namespace arcade
         virtual void setSize(const math::Vector2 &size) = 0;
 
         /**
+         * @brief Clears the canvas
+         *
+         */
+        virtual void clear() = 0;
+
+        /**
          * @brief Destroy the ICanvas object
          *
          */
