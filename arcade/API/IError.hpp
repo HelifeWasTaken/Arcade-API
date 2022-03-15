@@ -16,7 +16,7 @@ namespace arcade
          * giving information about the error
          *
          */
-        virtual char const *what() = 0;
+        virtual char const *what() const noexcept = 0;
 
         /**
          * @brief Destruct the Error object
@@ -35,10 +35,16 @@ namespace arcade
     { \
       private: \
         const std::string _error; \
-    \
+        \
       public: \
         Error(const std::string &error) \
             : _error(error) \
         { \
         } \
+        \
+        const char *what() const noexcept override \
+        { \
+            return _error.c_str(); \
+        } \
     };
+
