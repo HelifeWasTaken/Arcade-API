@@ -2,6 +2,19 @@
 
 namespace arcade
 {
+
+/**
+ * @brief Standard window size on X axis
+ *
+ */
+#define WINDOW_X 800
+
+/**
+ * @brief Standard window size on Y axis
+ *
+ */
+#define WINDOW_Y 600
+
     /**
      * @brief Forward declaration of arcade::IEvent
      *
