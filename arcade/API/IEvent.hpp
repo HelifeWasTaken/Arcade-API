@@ -50,6 +50,37 @@ enum KeyCode {
 };
 
 /**
+ * @brief API Implementation of IButton
+ *
+ */
+class IButton {
+public:
+  /**
+   * @brief API Implementation of Button
+   *
+   */
+  enum State { IDLE, PRESSED, RELEASED };
+
+  /**
+   * @brief Check if the button was pressed
+   *
+   * @return true The key is currently pressed
+   * @return false The key is not currently pressed
+   *
+   */
+  virtual bool isKeyPressed() const = 0;
+
+  /**
+   * @brief Check if the button was released
+   *
+   * @return true The key is currently pressed
+   * @return false The key is not currently pressed
+   *
+   */
+  virtual bool isKeyReleased() const = 0;
+};
+
+/**
  * @brief API Implementation of IEvent
  *
  */
@@ -64,7 +95,7 @@ public:
    * @return false The key is not currently pressed
    *
    */
-  virtual bool isKeyPressed(const KeyCode &code) = 0;
+  virtual bool isKeyPressed(const KeyCode &code) const = 0;
 
   /**
    * @brief Check if the event is a key event
@@ -76,7 +107,7 @@ public:
    * @return false The key is not currently released
    *
    */
-  virtual bool isKeyReleased(const KeyCode &code) = 0;
+  virtual bool isKeyReleased(const KeyCode &code) const = 0;
 
   /**
    * @brief Check has sent a close signal
@@ -87,7 +118,7 @@ public:
    * @return false The window is not closed
    *
    */
-  virtual bool isGameRunning() = 0;
+  virtual bool isGameRunning() const = 0;
 
   /**
    * @brief Destroy the IEvent object
