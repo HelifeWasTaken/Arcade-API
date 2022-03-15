@@ -73,50 +73,46 @@ $(function() {
 <div class="contents">
 <a href="IDLLoader_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacestd.html">std</a></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">class </span>string;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;} <span class="comment">// namespace std</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacearcade_1_1api.html">arcade::api</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">class </span>ICore;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacearcade.html">arcade</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">class </span>ICore;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classarcade_1_1IDLLoader.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1IDLLoader.html">IDLLoader</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classarcade_1_1IDLLoader.html#a0a43c583fcc14819a1cfbc474c65e9c3">   40</a></span>&#160;        <span class="keyword">virtual</span> T *<a class="code" href="classarcade_1_1IDLLoader.html#a0a43c583fcc14819a1cfbc474c65e9c3">load</a>(<span class="keyword">const</span> std::string &amp;path) = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classarcade_1_1api_1_1IDLLoader.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1api_1_1IDLLoader.html">IDLLoader</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classarcade_1_1api_1_1IDLLoader.html#a13fb28945acdabb3bdaeba8747426ebc">   32</a></span>&#160;        <span class="keyword">virtual</span> T *<a class="code" href="classarcade_1_1api_1_1IDLLoader.html#a13fb28945acdabb3bdaeba8747426ebc">load</a>(<span class="keyword">const</span> std::string &amp;path) = 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classarcade_1_1api_1_1IDLLoader.html#acaebe292ea39f74f043eedd028ed0610">   40</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1api_1_1IDLLoader.html#acaebe292ea39f74f043eedd028ed0610">unload</a>() = 0;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classarcade_1_1IDLLoader.html#a5717c73f758cd1bcafd4dfc1c81f91c9">   48</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classarcade_1_1IDLLoader.html#a5717c73f758cd1bcafd4dfc1c81f91c9">unload</a>() = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classarcade_1_1api_1_1IDLLoader.html#afb4983b598817194220cdac3c4ee6141">   46</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1api_1_1IDLLoader.html#afb4983b598817194220cdac3c4ee6141">~IDLLoader</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace arcade</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classarcade_1_1IDLLoader.html#ad53351c159e8df494cdbbd70df6afff3">   54</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1IDLLoader.html#ad53351c159e8df494cdbbd70df6afff3">~IDLLoader</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace arcade</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#ae49c5514463b771c74cfcf1d9ff0e5ba">   65</a></span>&#160;<span class="preprocessor">#define ARCADE_CONSTRUCTOR_SYM &quot;__arcade_constructor&quot;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#abd8eccd42c5245ae14976fc803f577da">   71</a></span>&#160;<span class="preprocessor">#define ARCADE_DESTRUCTOR_SYM &quot;__arcade_destructor&quot;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#a7be228971353931884c989178d9727bb">   82</a></span>&#160;<span class="preprocessor">#define ARCADE_CONSTRUCTOR void *__arcade_constructor()</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#a315f558baabe682dc9f56a2ed92efe55">   93</a></span>&#160;<span class="preprocessor">#define ARCADE_DESTRUCTOR void __arcade_destructor(void *cObject)</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#a3202257466b857959120831365974ac6">  102</a></span>&#160;    <a class="code" href="IDLLoader_8hpp.html#a7be228971353931884c989178d9727bb">ARCADE_CONSTRUCTOR</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#a96d0e4cfaf09fdd0e185ebf0eb28edb0">  112</a></span>&#160;    <a class="code" href="IDLLoader_8hpp.html#a315f558baabe682dc9f56a2ed92efe55">ARCADE_DESTRUCTOR</a>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
-<div class="ttc" id="aIDLLoader_8hpp_html_a315f558baabe682dc9f56a2ed92efe55"><div class="ttname"><a href="IDLLoader_8hpp.html#a315f558baabe682dc9f56a2ed92efe55">ARCADE_DESTRUCTOR</a></div><div class="ttdeci">#define ARCADE_DESTRUCTOR</div><div class="ttdoc">Default C style destructor to unload a module (In order to have a default symbol) This should never t...</div><div class="ttdef"><b>Definition:</b> IDLLoader.hpp:93</div></div>
-<div class="ttc" id="aIDLLoader_8hpp_html_a7be228971353931884c989178d9727bb"><div class="ttname"><a href="IDLLoader_8hpp.html#a7be228971353931884c989178d9727bb">ARCADE_CONSTRUCTOR</a></div><div class="ttdeci">#define ARCADE_CONSTRUCTOR</div><div class="ttdoc">default c style constructor to load a module (in order to have a default symbol) This should never th...</div><div class="ttdef"><b>Definition:</b> IDLLoader.hpp:82</div></div>
-<div class="ttc" id="aclassarcade_1_1IDLLoader_html"><div class="ttname"><a href="classarcade_1_1IDLLoader.html">arcade::IDLLoader</a></div><div class="ttdoc">API Implementation of DLLoader.</div><div class="ttdef"><b>Definition:</b> IDLLoader.hpp:27</div></div>
-<div class="ttc" id="aclassarcade_1_1IDLLoader_html_a0a43c583fcc14819a1cfbc474c65e9c3"><div class="ttname"><a href="classarcade_1_1IDLLoader.html#a0a43c583fcc14819a1cfbc474c65e9c3">arcade::IDLLoader::load</a></div><div class="ttdeci">virtual T * load(const std::string &amp;path)=0</div><div class="ttdoc">Load a library If the library could not be load OR the constructor could not be load OR the destructo...</div></div>
-<div class="ttc" id="aclassarcade_1_1IDLLoader_html_a5717c73f758cd1bcafd4dfc1c81f91c9"><div class="ttname"><a href="classarcade_1_1IDLLoader.html#a5717c73f758cd1bcafd4dfc1c81f91c9">arcade::IDLLoader::unload</a></div><div class="ttdeci">virtual void unload()=0</div><div class="ttdoc">Unload the current library safely Should never throw an Error as the destructor should always be safe...</div></div>
-<div class="ttc" id="aclassarcade_1_1IDLLoader_html_ad53351c159e8df494cdbbd70df6afff3"><div class="ttname"><a href="classarcade_1_1IDLLoader.html#ad53351c159e8df494cdbbd70df6afff3">arcade::IDLLoader::~IDLLoader</a></div><div class="ttdeci">virtual ~IDLLoader()=default</div><div class="ttdoc">Destroy the IDLLoader object.</div></div>
-<div class="ttc" id="anamespacearcade_html"><div class="ttname"><a href="namespacearcade.html">arcade</a></div><div class="ttdef"><b>Definition:</b> ICanvas.hpp:14</div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> ICanvas.hpp:4</div></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#ae49c5514463b771c74cfcf1d9ff0e5ba">   57</a></span>&#160;<span class="preprocessor">#define ARCADE_CONSTRUCTOR_SYM &quot;__arcade_constructor&quot;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#abd8eccd42c5245ae14976fc803f577da">   63</a></span>&#160;<span class="preprocessor">#define ARCADE_DESTRUCTOR_SYM &quot;__arcade_destructor&quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#a7be228971353931884c989178d9727bb">   74</a></span>&#160;<span class="preprocessor">#define ARCADE_CONSTRUCTOR void *__arcade_constructor()</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#a315f558baabe682dc9f56a2ed92efe55">   85</a></span>&#160;<span class="preprocessor">#define ARCADE_DESTRUCTOR void __arcade_destructor(void *cObject)</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#a3202257466b857959120831365974ac6">   94</a></span>&#160;    <a class="code" href="IDLLoader_8hpp.html#a7be228971353931884c989178d9727bb">ARCADE_CONSTRUCTOR</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="IDLLoader_8hpp.html#a96d0e4cfaf09fdd0e185ebf0eb28edb0">  104</a></span>&#160;    <a class="code" href="IDLLoader_8hpp.html#a315f558baabe682dc9f56a2ed92efe55">ARCADE_DESTRUCTOR</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="ttc" id="aIDLLoader_8hpp_html_a315f558baabe682dc9f56a2ed92efe55"><div class="ttname"><a href="IDLLoader_8hpp.html#a315f558baabe682dc9f56a2ed92efe55">ARCADE_DESTRUCTOR</a></div><div class="ttdeci">#define ARCADE_DESTRUCTOR</div><div class="ttdoc">Default C style destructor to unload a module (In order to have a default symbol) This should never t...</div><div class="ttdef"><b>Definition:</b> IDLLoader.hpp:85</div></div>
+<div class="ttc" id="aIDLLoader_8hpp_html_a7be228971353931884c989178d9727bb"><div class="ttname"><a href="IDLLoader_8hpp.html#a7be228971353931884c989178d9727bb">ARCADE_CONSTRUCTOR</a></div><div class="ttdeci">#define ARCADE_CONSTRUCTOR</div><div class="ttdoc">default c style constructor to load a module (in order to have a default symbol) This should never th...</div><div class="ttdef"><b>Definition:</b> IDLLoader.hpp:74</div></div>
+<div class="ttc" id="aclassarcade_1_1api_1_1IDLLoader_html"><div class="ttname"><a href="classarcade_1_1api_1_1IDLLoader.html">arcade::api::IDLLoader</a></div><div class="ttdoc">API Implementation of DLLoader.</div><div class="ttdef"><b>Definition:</b> IDLLoader.hpp:19</div></div>
+<div class="ttc" id="aclassarcade_1_1api_1_1IDLLoader_html_a13fb28945acdabb3bdaeba8747426ebc"><div class="ttname"><a href="classarcade_1_1api_1_1IDLLoader.html#a13fb28945acdabb3bdaeba8747426ebc">arcade::api::IDLLoader::load</a></div><div class="ttdeci">virtual T * load(const std::string &amp;path)=0</div><div class="ttdoc">Load a library If the library could not be load OR the constructor could not be load OR the destructo...</div></div>
+<div class="ttc" id="aclassarcade_1_1api_1_1IDLLoader_html_acaebe292ea39f74f043eedd028ed0610"><div class="ttname"><a href="classarcade_1_1api_1_1IDLLoader.html#acaebe292ea39f74f043eedd028ed0610">arcade::api::IDLLoader::unload</a></div><div class="ttdeci">virtual void unload()=0</div><div class="ttdoc">Unload the current library safely Should never throw an Error as the destructor should always be safe...</div></div>
+<div class="ttc" id="aclassarcade_1_1api_1_1IDLLoader_html_afb4983b598817194220cdac3c4ee6141"><div class="ttname"><a href="classarcade_1_1api_1_1IDLLoader.html#afb4983b598817194220cdac3c4ee6141">arcade::api::IDLLoader::~IDLLoader</a></div><div class="ttdeci">virtual ~IDLLoader()=default</div><div class="ttdoc">Destroy the IDLLoader object.</div></div>
+<div class="ttc" id="anamespacearcade_1_1api_html"><div class="ttname"><a href="namespacearcade_1_1api.html">arcade::api</a></div><div class="ttdef"><b>Definition:</b> ICanvas.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

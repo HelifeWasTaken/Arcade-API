@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['onevent_106',['onEvent',['../classarcade_1_1IEntity.html#adedd09a1a55d60a2de64885dbf36f578',1,'arcade::IEntity::onEvent()'],['../classarcade_1_1IGame.html#a1d804c39fea12cad6133f7df047fbdf1',1,'arcade::IGame::onEvent()']]],
-  ['onevententities_107',['onEventEntities',['../classarcade_1_1IEntityManager.html#a6c86d17af615fba8d7435cd9e489af06',1,'arcade::IEntityManager']]]
+  ['onevent_118',['onEvent',['../classarcade_1_1api_1_1IEntity.html#a4d67f5182d0e0477494bbc924f67bb83',1,'arcade::api::IEntity::onEvent()'],['../classarcade_1_1api_1_1IGame.html#a22ce51c66979b392bc8bb00317c8ff25',1,'arcade::api::IGame::onEvent()']]],
+  ['onevententities_119',['onEventEntities',['../classarcade_1_1api_1_1IEntityManager.html#a46f654fb8d0e839f1c2cf65d4389de15',1,'arcade::api::IEntityManager']]]
 ];

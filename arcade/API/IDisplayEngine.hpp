@@ -1,6 +1,6 @@
 #pragma once
 
-namespace arcade
+namespace arcade::api
 {
 
 /**
@@ -96,4 +96,4 @@ namespace arcade
          */
         virtual ~IDisplayEngine() = default;
     };
-} // namespace arcade
+} // namespace arcade::api

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['magenta_104',['MAGENTA',['../namespacearcade_1_1utils.html#aff8d466e2ca6930afbb73c99fffdb08da38d533ebd84a674836ae606a1febc3fe',1,'arcade::utils']]],
-  ['math_2ehpp_105',['Math.hpp',['../Math_8hpp.html',1,'']]]
+  ['magenta_116',['MAGENTA',['../namespacearcade_1_1api_1_1utils.html#aaa7d0720068770f377e0bc7ec5584dfba183e73947de1e9a4cd3a6ced66d86495',1,'arcade::api::utils']]],
+  ['math_2ehpp_117',['Math.hpp',['../Math_8hpp.html',1,'']]]
 ];

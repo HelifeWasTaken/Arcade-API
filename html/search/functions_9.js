@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['setpixel_211',['setPixel',['../classarcade_1_1ICanvas.html#aa448b5df89815a97d01e59b08073acb3',1,'arcade::ICanvas']]],
-  ['setpos_212',['setPos',['../classarcade_1_1ISprite.html#a09d4905296508882a4982b91125f4d88',1,'arcade::ISprite']]],
-  ['setscale_213',['setScale',['../classarcade_1_1ISprite.html#a7c966f6fd01b1894ab0e114e988e14dd',1,'arcade::ISprite']]],
-  ['setsize_214',['setSize',['../classarcade_1_1ICanvas.html#a327b348c736bbba2b9cd29600ba25d82',1,'arcade::ICanvas']]]
+  ['setkeystate_239',['setKeyState',['../classarcade_1_1api_1_1IEvent.html#a5d2a68502ad0fad4ef2ebf6ea4d4e5b9',1,'arcade::api::IEvent']]],
+  ['setpixel_240',['setPixel',['../classarcade_1_1api_1_1ICanvas.html#acfe8221fae50ad41dc4bc8b707dad429',1,'arcade::api::ICanvas']]],
+  ['setpos_241',['setPos',['../classarcade_1_1api_1_1ISprite.html#a1dca1ba58259f1f6109c417a319092cd',1,'arcade::api::ISprite']]],
+  ['setscale_242',['setScale',['../classarcade_1_1api_1_1ISprite.html#a59a77e7089eebe1902a565d399a9daac',1,'arcade::api::ISprite']]],
+  ['setsize_243',['setSize',['../classarcade_1_1api_1_1ICanvas.html#a0fa4d0fb19f59e39c7adf085086b776b',1,'arcade::api::ICanvas']]],
+  ['setstate_244',['setState',['../classarcade_1_1api_1_1IButton.html#a45f2546427d7c33c576c1bf1faac4a72',1,'arcade::api::IButton']]]
 ];

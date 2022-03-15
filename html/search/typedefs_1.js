@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['time_241',['Time',['../namespacearcade.html#a26bf0531db94ae86a96bce3b1c409838',1,'arcade']]]
+  ['time_273',['Time',['../namespacearcade_1_1api.html#ab606fb489f550fd0401b96b8ce8962e0',1,'arcade::api']]]
 ];

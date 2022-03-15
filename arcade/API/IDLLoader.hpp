@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace arcade
+namespace arcade::api
 {
     /**
      * @brief Forward declaration of arcade::ICore
@@ -45,7 +45,7 @@ namespace arcade
          */
         virtual ~IDLLoader() = default;
     };
-} // namespace arcade
+} // namespace arcade::api
 
 extern "C"
 {

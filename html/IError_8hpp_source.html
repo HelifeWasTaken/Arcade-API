@@ -75,20 +75,44 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacearcade.html">arcade</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacearcade_1_1api.html">arcade::api</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classarcade_1_1IError.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1IError.html">IError</a> : <span class="keyword">public</span> std::exception</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classarcade_1_1api_1_1IError.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classarcade_1_1api_1_1IError.html">IError</a> : <span class="keyword">public</span> std::exception</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classarcade_1_1IError.html#a9b58a12aebb74f45140cc0338c669f8d">   19</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">char</span> <span class="keyword">const</span> *<a class="code" href="classarcade_1_1IError.html#a9b58a12aebb74f45140cc0338c669f8d">what</a>() = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classarcade_1_1api_1_1IError.html#a37da83efc407747203185f27e54b013d">   19</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">char</span> <span class="keyword">const</span> *<a class="code" href="classarcade_1_1api_1_1IError.html#a37da83efc407747203185f27e54b013d">what</a>() const noexcept = 0;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classarcade_1_1IError.html#ab975dc4b702da7f0346b0b0cac9c4b34">   25</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classarcade_1_1IError.html#ab975dc4b702da7f0346b0b0cac9c4b34">~IError</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classarcade_1_1api_1_1IError.html#aa192d9edd44f48508793121da2b8b7bb">   25</a></span>&#160;        virtual ~<a class="code" href="classarcade_1_1api_1_1IError.html">IError</a>() = default;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="comment">// namespace arcade</span></div>
-<div class="ttc" id="aclassarcade_1_1IError_html"><div class="ttname"><a href="classarcade_1_1IError.html">arcade::IError</a></div><div class="ttdoc">Base class for all errors in the arcade.</div><div class="ttdef"><b>Definition:</b> IError.hpp:12</div></div>
-<div class="ttc" id="aclassarcade_1_1IError_html_a9b58a12aebb74f45140cc0338c669f8d"><div class="ttname"><a href="classarcade_1_1IError.html#a9b58a12aebb74f45140cc0338c669f8d">arcade::IError::what</a></div><div class="ttdeci">virtual char const  * what()=0</div><div class="ttdoc">Return a C style string giving information about the error.</div></div>
-<div class="ttc" id="aclassarcade_1_1IError_html_ab975dc4b702da7f0346b0b0cac9c4b34"><div class="ttname"><a href="classarcade_1_1IError.html#ab975dc4b702da7f0346b0b0cac9c4b34">arcade::IError::~IError</a></div><div class="ttdeci">virtual ~IError()=default</div><div class="ttdoc">Destruct the Error object.</div></div>
-<div class="ttc" id="anamespacearcade_html"><div class="ttname"><a href="namespacearcade.html">arcade</a></div><div class="ttdef"><b>Definition:</b> ICanvas.hpp:14</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;namespace <a class="code" href="namespacearcade.html">arcade</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacearcade.html#a289b8d8d0a8c4fae4003688ffe7802aa">   36</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacearcade.html#a289b8d8d0a8c4fae4003688ffe7802aa">Error</a> = IError;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="IError_8hpp.html#ab40c4661419e057404f8dce10d2d9f66">   43</a></span>&#160;<span class="preprocessor">#define ARCADE_ERROR_CLASS_IMPL                    \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    class Error : public IError                    \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">    {                                              \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">      private:                                     \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">        const std::string _error;                  \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">                                                   \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">      public:                                      \</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">        Error(const std::string &amp;error)            \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">            : _error(error)                        \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        {                                          \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">        }                                          \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">                                                   \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">        const char *what() const noexcept override \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">        {                                          \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">            return _error.c_str();                 \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">        }                                          \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    };</span></div>
+<div class="ttc" id="aclassarcade_1_1api_1_1IError_html"><div class="ttname"><a href="classarcade_1_1api_1_1IError.html">arcade::api::IError</a></div><div class="ttdoc">Base class for all errors in the arcade.</div><div class="ttdef"><b>Definition:</b> IError.hpp:12</div></div>
+<div class="ttc" id="aclassarcade_1_1api_1_1IError_html_a37da83efc407747203185f27e54b013d"><div class="ttname"><a href="classarcade_1_1api_1_1IError.html#a37da83efc407747203185f27e54b013d">arcade::api::IError::what</a></div><div class="ttdeci">virtual char const  * what() const noexcept=0</div><div class="ttdoc">Return a C style string giving information about the error.</div></div>
+<div class="ttc" id="anamespacearcade_1_1api_html"><div class="ttname"><a href="namespacearcade_1_1api.html">arcade::api</a></div><div class="ttdef"><b>Definition:</b> ICanvas.hpp:6</div></div>
+<div class="ttc" id="anamespacearcade_html"><div class="ttname"><a href="namespacearcade.html">arcade</a></div><div class="ttdef"><b>Definition:</b> ICanvas.hpp:6</div></div>
+<div class="ttc" id="anamespacearcade_html_a289b8d8d0a8c4fae4003688ffe7802aa"><div class="ttname"><a href="namespacearcade.html#a289b8d8d0a8c4fae4003688ffe7802aa">arcade::Error</a></div><div class="ttdeci">IError Error</div><div class="ttdoc">Convinience typedef for IError to make it look like a bit more standard.</div><div class="ttdef"><b>Definition:</b> IError.hpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

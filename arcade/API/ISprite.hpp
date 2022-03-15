@@ -1,6 +1,6 @@
 #pragma once
 
-namespace arcade
+namespace arcade::api
 {
     /**
      * @brief Forward declaration of arcade::ICanvas
@@ -66,4 +66,4 @@ namespace arcade
          */
         virtual void setScale(unsigned int scale) = 0;
     };
-} // namespace arcade
+} // namespace arcade::api

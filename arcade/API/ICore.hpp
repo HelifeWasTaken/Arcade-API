@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace arcade
+namespace arcade::api
 {
     /**
      * @brief Forward declaration of arcade::IEvent
@@ -90,4 +90,4 @@ namespace arcade
          */
         virtual void run() = 0;
     };
-} // namespace arcade
+} // namespace arcade::api

@@ -1,6 +1,6 @@
 #pragma once
 
-namespace arcade
+namespace arcade::api
 {
     /**
      * @brief All the keycodes for Event API
@@ -170,4 +170,4 @@ namespace arcade
         virtual ~IEvent() = default;
     };
 
-} // namespace arcade
+} // namespace arcade::api

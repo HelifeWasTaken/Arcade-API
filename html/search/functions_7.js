@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pollevent_206',['pollEvent',['../classarcade_1_1ICore.html#a395f38d64623c26b834a02ccb2cdb4c5',1,'arcade::ICore::pollEvent()'],['../classarcade_1_1IDisplayEngine.html#ac4844f359bee517366bfd5b4ce1f6f38',1,'arcade::IDisplayEngine::pollEvent()']]]
+  ['pollevent_233',['pollEvent',['../classarcade_1_1api_1_1ICore.html#aa21e4b5efb54f074468418001866c519',1,'arcade::api::ICore::pollEvent()'],['../classarcade_1_1api_1_1IDisplayEngine.html#a849a3cc6982af716b7b452a9c33d8aa9',1,'arcade::api::IDisplayEngine::pollEvent()']]]
 ];

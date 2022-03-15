@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Arcade: Main Page</title>
+<title>Arcade: Arcade-API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,11 +62,30 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Arcade Documentation</div>  </div>
+<div class="title">Arcade-API </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a>Arcade API Implementation and documentation</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+How to make the documentation:</h1>
+<div class="fragment"><div class="line">doxygen Doxyfile</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2"></a>
+How to update your local API inside your repository:</h1>
+<div class="fragment"><div class="line">#!/bin/bash</div>
+<div class="line"> </div>
+<div class="line">FOLDER=&quot;/tmp/arcade&quot;</div>
+<div class="line"> </div>
+<div class="line">rm -rf $FOLDER</div>
+<div class="line">git clone git@github.com:HelifeWasTaken/Arcade-API.git $FOLDER</div>
+<div class="line"> </div>
+<div class="line">rm -rf ./html ./arcade/API ./arcade/API.hpp</div>
+<div class="line">mv $FOLDER/LICENSE $FOLDER/README.md $FOLDER/Doxyfile $FOLDER/.gitignore $FOLDER/html .</div>
+<div class="line"> </div>
+<div class="line">mkdir -p ./arcade/API</div>
+<div class="line">mv $FOLDER/arcade/API.hpp $FOLDER/arcade/API ./arcade</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

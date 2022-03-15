@@ -2,7 +2,7 @@
 
 #include <exception>
 
-namespace arcade
+namespace arcade::api
 {
     /**
      * @brief Base class for all errors in the arcade
@@ -24,7 +24,10 @@ namespace arcade
          */
         virtual ~IError() = default;
     };
+} // namespace arcade::api
 
+namespace arcade
+{
     /**
      * @brief Convinience typedef for IError
      * to make it look like a bit more standard

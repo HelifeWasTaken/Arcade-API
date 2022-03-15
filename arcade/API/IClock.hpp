@@ -1,6 +1,6 @@
 #pragma once
 
-namespace arcade
+namespace arcade::api
 {
     /**
      * @brief Specific abstraction of the time
@@ -44,4 +44,4 @@ namespace arcade
          */
         virtual ~IClock() = default;
     };
-} // namespace arcade
+} // namespace arcade::api

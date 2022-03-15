@@ -13,7 +13,7 @@ namespace std
     class shared_ptr;
 } // namespace std
 
-namespace arcade
+namespace arcade::api
 {
     /**
      * @brief Forward declaration of arcade::IEvent
@@ -166,4 +166,4 @@ namespace arcade
          */
         virtual ~IEntityManager() = default;
     };
-} // namespace arcade
+} // namespace arcade::api

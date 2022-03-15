@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['getentity_24',['getEntity',['../classarcade_1_1IEntityManager.html#a2c065433aab4725c7815a63849fbcc0e',1,'arcade::IEntityManager']]],
-  ['getentityelement_25',['getEntityElement',['../classarcade_1_1IEntityManager.html#a470633a81db42dc7721d0879f26d0f18',1,'arcade::IEntityManager']]],
-  ['getid_26',['getId',['../classarcade_1_1IEntity.html#a7d902e61139a43126b746211dd78db75',1,'arcade::IEntity']]],
-  ['getpos_27',['getPos',['../classarcade_1_1ISprite.html#add270e988ca3c2073e6f0bbecf137531',1,'arcade::ISprite']]],
-  ['getsize_28',['getSize',['../classarcade_1_1ICanvas.html#ad0fbb0623064eb0cabc82fa2b647c883',1,'arcade::ICanvas::getSize()'],['../classarcade_1_1ISprite.html#a7540e4cab03e65be81adae133ddcb5e7',1,'arcade::ISprite::getSize()']]],
-  ['gettimeasmillseconds_29',['getTimeAsMillseconds',['../classarcade_1_1IClock.html#a249fd6d07ab39b3932133d522a5fde46',1,'arcade::IClock']]],
-  ['gettimeasseconds_30',['getTimeAsSeconds',['../classarcade_1_1IClock.html#a503175e7f4006854b3b08d8a07ffd45b',1,'arcade::IClock']]],
-  ['green_31',['GREEN',['../namespacearcade_1_1utils.html#aff8d466e2ca6930afbb73c99fffdb08da7608c270917af883779f181098783b5a',1,'arcade::utils']]]
+  ['getcanvas_28',['getCanvas',['../classarcade_1_1api_1_1IDisplayEngine.html#afa580bf61cd1c0f739f5d39d5069606f',1,'arcade::api::IDisplayEngine']]],
+  ['getentity_29',['getEntity',['../classarcade_1_1api_1_1IEntityManager.html#a94d5fc01e79b99dbb68bd369d464e7c0',1,'arcade::api::IEntityManager']]],
+  ['getentityelement_30',['getEntityElement',['../classarcade_1_1api_1_1IEntityManager.html#ae9e3e8515d44bc9011a8a1fbba531718',1,'arcade::api::IEntityManager']]],
+  ['getid_31',['getId',['../classarcade_1_1api_1_1IEntity.html#aba2d9efb214074fc9422d3c169daaa38',1,'arcade::api::IEntity']]],
+  ['getpos_32',['getPos',['../classarcade_1_1api_1_1ISprite.html#adc64ad0e66faf636bf4817d3d750b2c2',1,'arcade::api::ISprite']]],
+  ['getsize_33',['getSize',['../classarcade_1_1api_1_1ICanvas.html#ac57f06214082950ba333a3920de3c4b6',1,'arcade::api::ICanvas::getSize()'],['../classarcade_1_1api_1_1ISprite.html#a29b196bf0d65f596b541d08f0edc2817',1,'arcade::api::ISprite::getSize()']]],
+  ['getstate_34',['getState',['../classarcade_1_1api_1_1IButton.html#a3cf536c7777a9ac37f70a8e4dfe13d2c',1,'arcade::api::IButton']]],
+  ['gettimeasmillseconds_35',['getTimeAsMillseconds',['../classarcade_1_1api_1_1IClock.html#a05d9dcd16abd24188e33b92106dd714f',1,'arcade::api::IClock']]],
+  ['gettimeasseconds_36',['getTimeAsSeconds',['../classarcade_1_1api_1_1IClock.html#a5450abf6a099276bdd9cf857eb29574c',1,'arcade::api::IClock']]],
+  ['green_37',['GREEN',['../namespacearcade_1_1api_1_1utils.html#aaa7d0720068770f377e0bc7ec5584dfba4acd1ed1c695c404bd6993ececa6261e',1,'arcade::api::utils']]]
 ];

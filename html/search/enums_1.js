@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keycode_243',['KeyCode',['../namespacearcade.html#a20bb60b0a0cc3b82faacb89c60901f26',1,'arcade']]]
+  ['keycode_275',['KeyCode',['../namespacearcade_1_1api.html#a247b90982e5e013ecfbf16de88653961',1,'arcade::api']]]
 ];

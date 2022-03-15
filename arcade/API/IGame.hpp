@@ -1,6 +1,6 @@
 #pragma once
 
-namespace arcade
+namespace arcade::api
 {
     /**
      * @brief Forward declaration of arcade::IEntity
@@ -74,4 +74,4 @@ namespace arcade
          */
         virtual ~IGame() = default;
     };
-} // namespace arcade
+} // namespace arcade::api

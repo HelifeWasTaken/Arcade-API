@@ -1,14 +1,15 @@
 var searchData=
 [
-  ['_7eicanvas_221',['~ICanvas',['../classarcade_1_1ICanvas.html#a22492710a6a383bafeed32fc91d94954',1,'arcade::ICanvas']]],
-  ['_7eiclock_222',['~IClock',['../classarcade_1_1IClock.html#a013efed3d0156230ecbb06ccf084393f',1,'arcade::IClock']]],
-  ['_7eicore_223',['~ICore',['../classarcade_1_1ICore.html#a9be6c0a4baf5b79742c12f6841a98af6',1,'arcade::ICore']]],
-  ['_7eidisplayengine_224',['~IDisplayEngine',['../classarcade_1_1IDisplayEngine.html#a4ba9636fd474e15292f610756afeae36',1,'arcade::IDisplayEngine']]],
-  ['_7eidlloader_225',['~IDLLoader',['../classarcade_1_1IDLLoader.html#ad53351c159e8df494cdbbd70df6afff3',1,'arcade::IDLLoader']]],
-  ['_7eientity_226',['~IEntity',['../classarcade_1_1IEntity.html#a15d576058d49bdb522c1d66d9f76e4bc',1,'arcade::IEntity']]],
-  ['_7eientitymanager_227',['~IEntityManager',['../classarcade_1_1IEntityManager.html#a3537ed4c50f4d59d79c7ee262f13e142',1,'arcade::IEntityManager']]],
-  ['_7eierror_228',['~IError',['../classarcade_1_1IError.html#ab975dc4b702da7f0346b0b0cac9c4b34',1,'arcade::IError']]],
-  ['_7eievent_229',['~IEvent',['../classarcade_1_1IEvent.html#aae8a76ab5e350aa8ad5c1c35e3712999',1,'arcade::IEvent']]],
-  ['_7eigame_230',['~IGame',['../classarcade_1_1IGame.html#ab574ce2236870266790e003ff511e9a7',1,'arcade::IGame']]],
-  ['_7eisprite_231',['~ISprite',['../classarcade_1_1ISprite.html#ab50a47b20e64a554453710e64d265c80',1,'arcade::ISprite']]]
+  ['_7eibutton_251',['~IButton',['../classarcade_1_1api_1_1IButton.html#af2f2cd54d53df5e6cdd8305a7d29aaec',1,'arcade::api::IButton']]],
+  ['_7eicanvas_252',['~ICanvas',['../classarcade_1_1api_1_1ICanvas.html#ae8b5b84cc6fe1f65fbbec294485cc263',1,'arcade::api::ICanvas']]],
+  ['_7eiclock_253',['~IClock',['../classarcade_1_1api_1_1IClock.html#af28f97312960fef1297e45d18dce5f3f',1,'arcade::api::IClock']]],
+  ['_7eicore_254',['~ICore',['../classarcade_1_1api_1_1ICore.html#a609d4a1bbb94acf0e7a6b6b7d9e7b961',1,'arcade::api::ICore']]],
+  ['_7eidisplayengine_255',['~IDisplayEngine',['../classarcade_1_1api_1_1IDisplayEngine.html#acf0bc5c44b1de4c6595f8c53f05ac290',1,'arcade::api::IDisplayEngine']]],
+  ['_7eidlloader_256',['~IDLLoader',['../classarcade_1_1api_1_1IDLLoader.html#afb4983b598817194220cdac3c4ee6141',1,'arcade::api::IDLLoader']]],
+  ['_7eientity_257',['~IEntity',['../classarcade_1_1api_1_1IEntity.html#a79cf61348ee76e9ac3284cba5de1371a',1,'arcade::api::IEntity']]],
+  ['_7eientitymanager_258',['~IEntityManager',['../classarcade_1_1api_1_1IEntityManager.html#a808757ab29e80277331fcc2ed4d7e144',1,'arcade::api::IEntityManager']]],
+  ['_7eierror_259',['~IError',['../classarcade_1_1api_1_1IError.html#aa192d9edd44f48508793121da2b8b7bb',1,'arcade::api::IError']]],
+  ['_7eievent_260',['~IEvent',['../classarcade_1_1api_1_1IEvent.html#a3719ca58b42365258ad623a74ab32196',1,'arcade::api::IEvent']]],
+  ['_7eigame_261',['~IGame',['../classarcade_1_1api_1_1IGame.html#ad7f8292d173ae0d0bf9c0506e2a96c60',1,'arcade::api::IGame']]],
+  ['_7eisprite_262',['~ISprite',['../classarcade_1_1api_1_1ISprite.html#a8cfeaa865d3f36adf8a876e4e3f469fd',1,'arcade::api::ISprite']]]
 ];

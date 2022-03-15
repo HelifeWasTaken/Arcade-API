@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['red_289',['RED',['../namespacearcade_1_1utils.html#aff8d466e2ca6930afbb73c99fffdb08da6bf1d27a2922c7e23368bb48b4c0162f',1,'arcade::utils']]]
+  ['magenta_326',['MAGENTA',['../namespacearcade_1_1api_1_1utils.html#aaa7d0720068770f377e0bc7ec5584dfba183e73947de1e9a4cd3a6ced66d86495',1,'arcade::api::utils']]]
 ];

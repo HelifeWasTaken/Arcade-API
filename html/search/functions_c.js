@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['what_220',['what',['../classarcade_1_1IError.html#a9b58a12aebb74f45140cc0338c669f8d',1,'arcade::IError']]]
+  ['what_250',['what',['../classarcade_1_1api_1_1IError.html#a37da83efc407747203185f27e54b013d',1,'arcade::api::IError']]]
 ];

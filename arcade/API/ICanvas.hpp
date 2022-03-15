@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace arcade
+namespace arcade::api
 {
     namespace math
     {
@@ -115,4 +115,4 @@ namespace arcade
          */
         virtual ~ICanvas() = default;
     };
-} // namespace arcade
+} // namespace arcade::api

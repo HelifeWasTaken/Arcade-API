@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['entityelement_22',['EntityElement',['../namespacearcade.html#ab556295a0b607393a72b32e658b64447',1,'arcade']]],
-  ['entityid_23',['EntityId',['../namespacearcade.html#acc82cccd1e6e035aa83a2ef99f791a1d',1,'arcade']]]
+  ['entityelement_25',['EntityElement',['../namespacearcade_1_1api.html#aaf7efe7304163f6dc78056da14b98f07',1,'arcade::api']]],
+  ['entityid_26',['EntityId',['../namespacearcade_1_1api.html#a84cab4f1a0a7146a01009e0a54a1613a',1,'arcade::api']]],
+  ['error_27',['Error',['../namespacearcade.html#a289b8d8d0a8c4fae4003688ffe7802aa',1,'arcade']]]
 ];
