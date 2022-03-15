@@ -198,9 +198,6 @@ namespace arcade
         void setKeyState(const KeyCode code,
                          const IButton::State state) override;
 
-        void setGameRunning(const bool running) override;
-        bool isGameRunning() const override;
-
         bool isKeyPressed(const KeyCode code) const override;
         bool isKeyReleased(const KeyCode code) const override;
 
@@ -208,6 +205,5 @@ namespace arcade
 
       private:
         std::array<Button, KeyCode::K_COUNT> _buttonArray;
-        bool _gameRunning = false;
     };
 } // namespace arcade

@@ -82,6 +82,12 @@ namespace arcade
         virtual ICanvas &getCanvas() = 0;
 
         /**
+         * @brief Tells whether the Display/Arcade is running
+         *
+         */
+        virtual bool isOpen() const = 0;
+
+        /**
          * @brief Destroy the IDisplayEngine object
          *
          */
