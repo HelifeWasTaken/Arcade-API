@@ -36,7 +36,7 @@ namespace arcade
          *
          * @param canvas The canvas to draw on
          */
-        virtual void draw(ICanvas &canvas) = 0;
+        virtual void draw(ICanvas &canvas) const = 0;
 
         /**
          * @brief Get the Size object
