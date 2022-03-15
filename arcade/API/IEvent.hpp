@@ -45,7 +45,8 @@ enum KeyCode {
   K_6,
   K_7,
   K_8,
-  K_9
+  K_9,
+  K_COUNT
 };
 
 /**
