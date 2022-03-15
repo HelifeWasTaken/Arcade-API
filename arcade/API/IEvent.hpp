@@ -1,5 +1,7 @@
 #pragma once
 
+#include <array>
+
 namespace arcade
 {
     /**
@@ -173,5 +175,39 @@ namespace arcade
          *
          */
         virtual ~IEvent() = default;
+    };
+
+    class Button : public IButton
+    {
+      public:
+        ~Button();
+
+        bool isKeyPressed(void) const override;
+        bool isKeyReleased(void) const override;
+
+        void setState(const State newState) override;
+        State getState(void) const override;
+
+      private:
+        State _state = IDLE;
+    };
+
+    class Event : public IEvent
+    {
+      public:
+        void setKeyState(const KeyCode code,
+                         const IButton::State state) override;
+
+        void setGameRunning(const bool running) override;
+        bool isGameRunning() const override;
+
+        bool isKeyPressed(const KeyCode code) const override;
+        bool isKeyReleased(const KeyCode code) const override;
+
+        ~Event() = default;
+
+      private:
+        std::array<Button, KeyCode::K_COUNT> _buttonArray;
+        bool _gameRunning = false;
     };
 } // namespace arcade
