@@ -130,13 +130,6 @@ namespace arcade
                                  const IButton::State state) = 0;
 
         /**
-         * @brief Set the state of the game as Exit
-         * @param running The new state of the game
-         *
-         */
-        virtual void setGameRunning(const bool running) = 0;
-
-        /**
          * @brief Check if the event is a key event
          *        and if it is currently pressed at the moment
          *
@@ -160,17 +153,6 @@ namespace arcade
         virtual bool isKeyReleased(const KeyCode code) const = 0;
 
         /**
-         * @brief Check has sent a close signal
-         *        This might not work in some cases like ncurses
-         *        try to make a workaround if you need it
-         *
-         * @return true The window is closed
-         * @return false The window is not closed
-         *
-         */
-        virtual bool isGameRunning() const = 0;
-
-        /**
          * @brief Destroy the IEvent object
          *
          */
@@ -180,7 +162,7 @@ namespace arcade
     class Button : public IButton
     {
       public:
-        ~Button();
+        ~Button() override = default;
 
         bool isKeyPressed(void) const override;
         bool isKeyReleased(void) const override;
@@ -201,7 +183,7 @@ namespace arcade
         bool isKeyPressed(const KeyCode code) const override;
         bool isKeyReleased(const KeyCode code) const override;
 
-        ~Event() = default;
+        ~Event() override = default;
 
       private:
         std::array<Button, KeyCode::K_COUNT> _buttonArray;
