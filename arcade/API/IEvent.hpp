@@ -107,7 +107,7 @@ public:
    * @param State The new state of the button
    * 
    */
-  virtual void setState(const KeyCode code, const IButton::State state) = 0;
+  virtual void setKeyState(const KeyCode code, const IButton::State state) = 0;
 
   /**
    * @brief Check if the event is a key event
