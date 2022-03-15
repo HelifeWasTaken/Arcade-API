@@ -158,6 +158,12 @@ namespace arcade
         virtual bool isKeyReleased(const KeyCode code) const = 0;
 
         /**
+         * @brief Resets the event object
+         *
+         */
+        virtual void reset() = 0;
+
+        /**
          * @brief Destroy the IEvent object
          *
          */
