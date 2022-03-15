@@ -37,7 +37,10 @@ namespace arcade
      * @brief API Implementation of IDisplayEngine
      * The IDisplayEngine should have a Canvas to manage the display
      * And an implementation of the pollEvent system like the SFML one
-     * It is recommended to use std::queue<IEvent> for the event queue
+     * It is recommended to use std::queue<int> for the event queue
+     * in ncurses (and similar) because of the limitations
+     * Other libraries should just use the event queue from their
+     * respective libraries
      *
      */
     class IDisplayEngine
