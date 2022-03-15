@@ -19,7 +19,7 @@ namespace arcade
      * @brief Forward declaration of arcade::IEvent
      *
      */
-    class Event;
+    class IEvent;
 
     /**
      * @brief Forward declaration of arcade::ISprite
@@ -51,7 +51,7 @@ namespace arcade
          * @return false if no event is available
          *
          */
-        virtual bool pollEvent(Event &event) = 0;
+        virtual bool pollEvent(IEvent &event) = 0;
 
         /**
          * @brief Draws the sprite on the canvas at the given position
