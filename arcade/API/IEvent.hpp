@@ -50,6 +50,13 @@ namespace arcade
         K_7,
         K_8,
         K_9,
+        K_SPACE,
+        K_ENTER,
+        // Is not a KeyBoard key but
+        // is used to simulate a quit event
+        K_QUIT,
+        // Is not a KeyBoard key but
+        // is used to know how many keys are available
         K_COUNT
     };
 
