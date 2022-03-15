@@ -25,3 +25,20 @@ namespace arcade
         virtual ~IError() = default;
     };
 } // namespace arcade
+
+/**
+ * @brief Should be used as a nested class
+ *
+ */
+#define ARCADE_ERROR_CLASS_IMPL \
+    class Error : public IError \
+    { \
+      private: \
+        const std::string _error; \
+    \
+      public: \
+        Error(const std::string &error) \
+            : _error(error) \
+        { \
+        } \
+    };
