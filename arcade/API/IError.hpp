@@ -24,6 +24,13 @@ namespace arcade
          */
         virtual ~IError() = default;
     };
+
+    /**
+     * @brief Convinience typedef for IError
+     * to make it look like a bit more standard
+     *
+     */
+    using Error = IError;
 } // namespace arcade
 
 /**
