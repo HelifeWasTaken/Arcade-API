@@ -15,6 +15,12 @@ namespace arcade
     class ISprite;
 
     /**
+     * @brief Forward declaration of arcade::ICanvas
+     *
+     */
+    class ICanvas;
+
+    /**
      * @brief API Implementation of IDisplayEngine
      * The IDisplayEngine should have a Canvas to manage the display
      * And an implementation of the pollEvent system like the SFML one
@@ -55,6 +61,12 @@ namespace arcade
          *
          */
         virtual void display() = 0;
+
+        /**
+         * @brief Get the canvas of the current display
+         *
+         */
+        virtual ICanvas& getCanvas() = 0;
 
         /**
          * @brief Destroy the IDisplayEngine object

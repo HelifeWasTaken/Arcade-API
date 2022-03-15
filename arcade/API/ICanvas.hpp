@@ -1,14 +1,6 @@
 #pragma once
 
-namespace std
-{
-    /**
-     * @brief Forward declaration of
-     * standard std::string -> std::basic_string<char>
-     *
-     */
-    class string;
-} // namespace std
+#include <string>
 
 namespace arcade
 {
