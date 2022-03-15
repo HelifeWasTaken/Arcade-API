@@ -70,6 +70,14 @@ public:
   virtual void setState(const State state) = 0;
 
   /**
+   * @brief Get the state of the button
+   *
+   * @return State The state of the button
+   * 
+   */
+  virtual State getState() const = 0;
+
+  /**
    * @brief Check if the button was pressed
    *
    * @return true The key is currently pressed
@@ -108,6 +116,13 @@ public:
    * 
    */
   virtual void setKeyState(const KeyCode code, const IButton::State state) = 0;
+
+  /**
+   * @brief Set the state of the game as Exit
+   * @param running The new state of the game
+   * 
+   */
+  virtual void setGameRunning(const bool running) = 0;
 
   /**
    * @brief Check if the event is a key event
