@@ -35,8 +35,7 @@ namespace arcade::api
 
     /**
      * @brief API Implementation of IDisplayEngine
-     * The IDisplayEngine should have a Canvas to manage the display
-     * And an implementation of the pollEvent system like the SFML one
+     * The IDisplayEngine implementation of the pollEvent system should be like the SFML one
      * It is recommended to use std::queue<int> for the event queue
      * in ncurses (and similar) because of the limitations
      * Other libraries should just use the event queue from their
@@ -57,14 +56,6 @@ namespace arcade::api
         virtual bool pollEvent(IEvent &event) = 0;
 
         /**
-         * @brief Draws the sprite on the canvas at the given position
-         *
-         * @param sprite The sprite to draw
-         *
-         */
-        virtual void draw(const ISprite &sprite) = 0;
-
-        /**
          * @brief Should clear the canvas
          * It should always clear the canvas to black
          * due to limitations on libraries such as ncurses
@@ -73,16 +64,11 @@ namespace arcade::api
         virtual void clear() = 0;
 
         /**
-         * @brief Should draw the current canvas
+         * @brief Should draw the canvas
+         * @param canvas The canvas to draw
          *
          */
-        virtual void display() = 0;
-
-        /**
-         * @brief Get the canvas of the current display
-         *
-         */
-        virtual ICanvas &getCanvas() = 0;
+        virtual void display(const ICanvas& canvas) = 0;
 
         /**
          * @brief Tells whether the Display/Arcade is running

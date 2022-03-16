@@ -29,6 +29,12 @@ namespace arcade::api
     class ISprite;
 
     /**
+     * @brief Forward declaration of arcade::ICanvas
+     *
+     */
+    class ICanvas;
+
+    /**
      * @brief API Implementation of ICore
      *
      */
@@ -56,11 +62,24 @@ namespace arcade::api
          * @brief Draws the sprite on the canvas of the current DisplayEngine
          * at the given position
          * Should throw an standard arcade::Error if no DisplayEngine is loaded
+         * It should draw on the Core's canvas
          *
          * @param sprite The sprite to draw
          *
          */
         virtual void draw(const ISprite &sprite) = 0;
+
+        /**
+         * @brief Display the current canvas in the IEngine
+         *
+         */
+        virtual void display(const ICanvas& canvas) = 0;
+
+        /**
+         * @brief Clears the current canvas and the window of the IEngine
+         *
+         */
+        virtual void clear() = 0;
 
         /**
          * @brief Load a new game (throw an exception if the game could not be
