@@ -107,7 +107,7 @@ namespace arcade::api
          * @brief Get pixels
          *
          */
-        virtual uint8_t *getPixels() = 0;
+        virtual const uint8_t *getPixels() const = 0;
 
         /**
          * @brief Destroy the ICanvas object
