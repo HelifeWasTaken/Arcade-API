@@ -38,14 +38,14 @@ namespace arcade::api
          */
         enum Color
         {
-            BLACK   = 0x00000000,
-            BLUE    = 0x000000FF,
-            GREEN   = 0x0000FF00,
-            RED     = 0x00FF0000,
-            CYAN    = 0x0000FFFF,
-            MAGENTA = 0x00FF00FF,
-            YELLOW  = 0x00FFFF00,
-            WHITE   = 0x00FFFFFF
+            BLACK   = 0x000000FF,
+            BLUE    = 0x0000FFFF,
+            GREEN   = 0x00FF00FF,
+            RED     = 0xFF0000FF,
+            CYAN    = 0x00FFFFFF,
+            MAGENTA = 0xFF00FFFF,
+            YELLOW  = 0xFFFF00FF,
+            WHITE   = 0xFFFFFFFF
         };
     } // namespace utils
 
