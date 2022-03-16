@@ -104,6 +104,12 @@ namespace arcade::api
         virtual void clear() = 0;
 
         /**
+         * @brief Get pixels
+         *
+         */
+        virtual uint8_t *getPixels() = 0;
+
+        /**
          * @brief Destroy the ICanvas object
          *
          */
