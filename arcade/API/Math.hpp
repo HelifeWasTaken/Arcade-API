@@ -55,18 +55,6 @@ namespace arcade::api
         struct Rectangle
         {
             /**
-             * @brief Width of the current element
-             *
-             */
-            unsigned int width;
-
-            /**
-             * @brief Height of the current element
-             *
-             */
-            unsigned int height;
-
-            /**
              * @brief x axis in a 2D plane
              *
              */
@@ -77,6 +65,18 @@ namespace arcade::api
              *
              */
             int y;
+
+            /**
+             * @brief Width of the current element
+             *
+             */
+            unsigned int width;
+
+            /**
+             * @brief Height of the current element
+             *
+             */
+            unsigned int height;
         };
 
         /**
