@@ -76,7 +76,13 @@ namespace arcade::api
          * @return EntityId
          *
          */
-        virtual EntityId getId() = 0;
+        virtual EntityId getId() const = 0;
+
+        /**
+         * @brief Sets the Id object
+         *
+         */
+        virtual void setId(EntityId id) = 0;
 
         /**
          * @brief Destroy the IEntity object
