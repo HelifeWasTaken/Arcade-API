@@ -87,7 +87,7 @@ namespace arcade::api
          * @return Vector2 The offset
          *
          */
-        Vector2 distance(const Vector2 &a, const Vector2 &b);
+        static Vector2 distance(const Vector2 &a, const Vector2 &b);
 
         /**
          * @brief Get the lerp between a and b with the speed c
@@ -99,7 +99,7 @@ namespace arcade::api
          * @return double The offset
          *
          */
-        double lerp(double a, double b, double c);
+        static double lerp(double a, double b, double c);
 
         /**
          * @brief Get the lerp between a and b with the speed c
@@ -111,7 +111,7 @@ namespace arcade::api
          * @return Vector2 The offset
          *
          */
-        Vector2 lerp(const Vector2 &a, const Vector2 &b, double c);
+        static Vector2 lerp(const Vector2 &a, const Vector2 &b, double c);
 
         /**
          * @brief Transform degrees to radian
@@ -119,7 +119,7 @@ namespace arcade::api
          * @return double The value in radians
          *
          */
-        double toRadian(double degree);
+        static double toRadian(double degree);
 
         /**
          * @brief Transform radians to degrees
@@ -127,7 +127,7 @@ namespace arcade::api
          * @return double The value in degrees
          *
          */
-        double toDegree(double radian);
+        static double toDegree(double radian);
 
         /**
          * @brief Clamping permits to limitate a posisition
@@ -138,7 +138,7 @@ namespace arcade::api
          * @return double The clamped value
          *
          */
-        double clamp(double value, double min, double max);
+        static double clamp(double value, double min, double max);
 
         /**
          * @brief Tells whether if a given position is inside a rectangle
@@ -149,7 +149,7 @@ namespace arcade::api
          * @return false If the position is not inside the rect
          *
          */
-        bool isInRect(const Rectangle &rect, const Vector2 &pos);
+        static bool isInRect(const Rectangle &rect, const Vector2 &pos);
 
         /**
          * @brief Tells whether if a given rectangle touches/intersects with an
@@ -162,7 +162,7 @@ namespace arcade::api
          * rect
          *
          */
-        bool rectIntersect(const Rectangle &a, const Rectangle &b);
+        static bool rectIntersect(const Rectangle &a, const Rectangle &b);
     } // namespace math
 } // namespace arcade::api
 
