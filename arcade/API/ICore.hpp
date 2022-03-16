@@ -73,7 +73,7 @@ namespace arcade::api
          * @brief Display the current canvas in the IEngine
          *
          */
-        virtual void display(const ICanvas& canvas) = 0;
+        virtual void display() = 0;
 
         /**
          * @brief Clears the current canvas and the window of the IEngine
