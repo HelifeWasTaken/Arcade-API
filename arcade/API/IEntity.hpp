@@ -1,17 +1,6 @@
 #pragma once
 
-namespace std
-{
-    /**
-     * @brief Forward declaration of
-     * standard shared_ptr<T>
-     *
-     * @tparam T Type of the variable
-     *
-     */
-    template <typename T>
-    class shared_ptr;
-} // namespace std
+#include <memory>
 
 namespace arcade::api
 {

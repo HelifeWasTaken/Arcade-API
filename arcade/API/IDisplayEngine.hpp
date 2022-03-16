@@ -35,11 +35,11 @@ namespace arcade::api
 
     /**
      * @brief API Implementation of IDisplayEngine
-     * The IDisplayEngine implementation of the pollEvent system should be like the SFML one
-     * It is recommended to use std::queue<int> for the event queue
-     * in ncurses (and similar) because of the limitations
-     * Other libraries should just use the event queue from their
-     * respective libraries
+     * The IDisplayEngine implementation of the pollEvent system should be like
+     * the SFML one It is recommended to use std::queue<int> for the event
+     * queue in ncurses (and similar) because of the limitations Other
+     * libraries should just use the event queue from their respective
+     * libraries
      *
      */
     class IDisplayEngine
@@ -53,7 +53,7 @@ namespace arcade::api
          * @return false if no event is available
          *
          */
-        virtual bool pollEvent(IEvent &event) = 0;
+        virtual bool pollEvent(IEvent& event) = 0;
 
         /**
          * @brief Should clear the canvas

@@ -164,4 +164,25 @@ namespace arcade::api
          */
         bool rectIntersect(const Rectangle &a, const Rectangle &b);
     } // namespace math
+} // namespace arcade::api
+
+namespace arcade
+{
+    /**
+     * @brief Easily access Vector2 from api::math::Vector2
+     *
+     */
+    using Vector2 = api::math::Vector2;
+
+    /**
+     * @brief Easily access Vector3 from api::math::Vector3
+     *
+     */
+    using Vector3 = api::math::Vector3;
+
+    /**
+     * @brief Easily access Rectangle from api::math::Rectangle
+     *
+     */
+    using Rectangle = api::math::Rectangle;
 } // namespace arcade
