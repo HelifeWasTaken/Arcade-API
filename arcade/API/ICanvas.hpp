@@ -98,12 +98,6 @@ namespace arcade::api
         virtual const math::Vector2 &getSize() const = 0;
 
         /**
-         * @brief Set the Size object
-         *
-         */
-        virtual void setSize(const math::Vector2 &size) = 0;
-
-        /**
          * @brief Clears the canvas
          *
          */
