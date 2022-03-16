@@ -26,9 +26,9 @@ namespace arcade::api
          * Thoses values are the standardised RGB values
          * For libraries like ncurses you will need to store the
          * attron values like if possible
-         *
-         *    R   G  B
-         * 0xFF  FF FF
+         * 
+         * Values are made using ABGR standard format
+         * @see https://en.wikipedia.org/wiki/ABGR_color_space
          *
          * Please avoid using other colors because of terminal applications
          * limitations or provide clamp of the color For example in ncurses
@@ -38,13 +38,13 @@ namespace arcade::api
          */
         enum Color
         {
-            BLACK   = 0x000000FF,
-            BLUE    = 0x0000FFFF,
-            GREEN   = 0x00FF00FF,
+            BLACK   = 0xFF000000,
+            BLUE    = 0xFFFF0000,
+            GREEN   = 0xFF00FF00,
             RED     = 0xFF0000FF,
-            CYAN    = 0x00FFFFFF,
-            MAGENTA = 0xFF00FFFF,
-            YELLOW  = 0xFFFF00FF,
+            CYAN    = 0xFFFFFF00,
+            MAGENTA = 0xFFFF00FF,
+            YELLOW  = 0xFF00FFFF,
             WHITE   = 0xFFFFFFFF
         };
     } // namespace utils
