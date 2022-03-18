@@ -34,18 +34,6 @@ namespace arcade::api
     {
       public:
         /**
-         * @brief Initialize the game
-         *
-         */
-        virtual void init() = 0;
-
-        /**
-         * @brief Destroy the game
-         *
-         */
-        virtual void destroy() = 0;
-
-        /**
          * @brief Update the game (Events only)
          *
          * @param event The event object
