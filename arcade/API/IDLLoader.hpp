@@ -14,7 +14,7 @@ namespace arcade::api
      * @brief API Implementation of DLLoader
      *
      */
-    template <typename T>
+    template <typename T, char* InitSymbol>
     class IDLLoader
     {
       public:
@@ -40,6 +40,14 @@ namespace arcade::api
         virtual void unload() = 0;
 
         /**
+         * @brief Get the current library name
+         *
+         * @return T* the object of the library
+         *
+         */
+        const std::string &getName() const;
+
+        /**
          * @brief Destroy the IDLLoader object
          *
          */
@@ -51,10 +59,16 @@ extern "C"
 {
 
 /**
- * @brief Arcade C symbol constructor symbol
+ * @brief Arcade C symbol display engine constructor symbol
  *
  */
-#define ARCADE_CONSTRUCTOR_SYM "__arcade_constructor"
+#define ARCADE_DISPLAY_ENGINE_CONSTRUCTOR_SYM "__arcade_de_constructor"
+
+/**
+ * @brief Arcade C symbol game constructor symbol
+ *
+ */
+#define ARCADE_GAME_CONSTRUCTOR_SYM "__arcade_game_constructor"
 
 /**
  * @brief Arcade C style destructor symbol
@@ -64,14 +78,25 @@ extern "C"
 
 /**
  * @brief default c style constructor to load
- * a module (in order to have a default symbol)
+ * a display engine module (in order to have a default symbol)
  * This should never throw an exception
  *
  * @param core the arcade core to query it through the module
  * @return void * the new module object
  *
  */
-#define ARCADE_CONSTRUCTOR void *__arcade_constructor()
+#define ARCADE_DISPLAY_ENGINE_CONSTRUCTOR void *__arcade_de_constructor()
+
+/**
+ * @brief default c style constructor to load
+ * a game module (in order to have a default symbol)
+ * This should never throw an exception
+ *
+ * @param core the arcade core to query it through the module
+ * @return void * the new module object
+ *
+ */
+#define ARCADE_GAME_CONSTRUCTOR void *__arcade_game_constructor()
 
 /**
  * @brief Default C style destructor to unload
@@ -91,7 +116,16 @@ extern "C"
      * @return void * the new module object
      *
      */
-    ARCADE_CONSTRUCTOR;
+    ARCADE_DISPLAY_ENGINE_CONSTRUCTOR;
+
+    /**
+     * @brief default c style constructor to load
+     * a module (in order to have a default symbol)
+     *
+     * @return void * the new module object
+     *
+     */
+    ARCADE_GAME_CONSTRUCTOR;
 
     /**
      * @brief Default C style destructor to unload
