@@ -14,7 +14,7 @@ namespace arcade::api
      * @brief API Implementation of DLLoader
      *
      */
-    template <typename T, char* InitSymbol>
+    template <typename T>
     class IDLLoader
     {
       public:

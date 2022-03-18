@@ -39,9 +39,9 @@ namespace arcade::api
         virtual void draw(ICanvas &canvas) const = 0;
 
         /**
-         * @brief Get the Scale object
+         * @brief Get the Size object
          *
-         * @return const unsigned int& The scale of the sprite
+         * @return const Vector2& The width of the sprite
          */
         virtual const unsigned int &getScale() const = 0;
 
