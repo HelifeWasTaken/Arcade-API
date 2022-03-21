@@ -62,7 +62,7 @@ extern "C"
  * @brief Arcade C symbol display engine constructor symbol
  *
  */
-#define ARCADE_DISPLAY_ENGINE_CONSTRUCTOR_SYM "__arcade_de_constructor"
+#define ARCADE_DISPLAY_ENGINE_CONSTRUCTOR_SYM "__arcade_display_engine_constructor"
 
 /**
  * @brief Arcade C symbol game constructor symbol
@@ -85,7 +85,7 @@ extern "C"
  * @return void * the new module object
  *
  */
-#define ARCADE_DISPLAY_ENGINE_CONSTRUCTOR void *__arcade_de_constructor()
+#define ARCADE_DISPLAY_ENGINE_CONSTRUCTOR void *__arcade_display_engine_constructor()
 
 /**
  * @brief default c style constructor to load
