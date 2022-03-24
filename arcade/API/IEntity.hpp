@@ -70,6 +70,15 @@ namespace arcade::api
         virtual EntityId getId() const = 0;
 
         /**
+         * @brief Get the type object
+         * This should never throw an error
+         *
+         * @return type
+         *
+         */
+        virtual int getType() const = 0;
+
+        /**
          * @brief Sets the Id object
          *
          */
@@ -146,6 +155,21 @@ namespace arcade::api
          *
          */
         virtual EntityElement &getEntityElement(EntityId id) = 0;
+
+        /**
+         * @brief Get the entity from a Type
+         * if the specified entity is NULL returns the first occurence
+         * if the specified entity is non NULL returns the first occurence
+         * AFTER the specified entity
+         * it is recommended to wrap the return value around a std::shared_ptr
+         * if it is non null
+         *
+         * @param int EntityType
+         * @param api::IEntity * pointer to the start of the search
+         * @return api::IEntity * A pointer to newly found entity
+         *
+         */
+        virtual IEntity *getEntityFromType(int entityType, api::IEntity *lastEntity) = 0;
 
         /**
          * @brief Remove an entity from the manager
