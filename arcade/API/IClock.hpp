@@ -28,7 +28,7 @@ namespace arcade::api
          * @return Time as Milliseconds
          *
          */
-        virtual Time getTimeAsMillseconds() const = 0;
+        virtual Time getTimeAsMilliseconds() const = 0;
 
         /**
          * @brief Get the Time As Seconds object
@@ -37,6 +37,22 @@ namespace arcade::api
          *
          */
         virtual Time getTimeAsSeconds() const = 0;
+
+        /**
+         * @brief Get the current tick
+         *
+         * @return unsigned int The current tick
+         *
+         */
+        virtual unsigned int getTick() const = 0;
+
+        /**
+         * @brief Set the number of milliseconds between ticks
+         *
+         * @return Set the number of seconds
+         *
+         */
+        virtual void setTick(unsigned int milliseconds) = 0;
 
         /**
          * @brief Destroy the IClock object
