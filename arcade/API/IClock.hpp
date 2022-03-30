@@ -28,7 +28,7 @@ namespace arcade::api
          * @return Time as Milliseconds
          *
          */
-        virtual Time getTimeAsMilliseconds() const = 0;
+        virtual Time getTimeAsMilliSeconds() const = 0;
 
         /**
          * @brief Get the Time As Seconds object
