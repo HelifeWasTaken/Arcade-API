@@ -49,7 +49,7 @@ namespace arcade::api
          * This should never throw an error
          *
          */
-        virtual void draw(ICanvas& canvas) = 0;
+        virtual void draw(ICanvas &canvas) = 0;
 
         /**
          * @brief Update the entity (Events only)
@@ -111,7 +111,7 @@ namespace arcade::api
          * This should never throw an error
          *
          */
-        virtual void drawEntities(ICanvas& canvas) = 0;
+        virtual void drawEntities(ICanvas &canvas) = 0;
 
         /**
          * @brief Update the events of all the entities
@@ -169,7 +169,8 @@ namespace arcade::api
          * @return api::IEntity * A pointer to newly found entity
          *
          */
-        virtual IEntity *getEntityFromType(int entityType, api::IEntity *lastEntity) = 0;
+        virtual IEntity *getEntityFromType(int entityType,
+                                           api::IEntity *lastEntity) = 0;
 
         /**
          * @brief Remove an entity from the manager

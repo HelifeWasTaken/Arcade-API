@@ -26,7 +26,7 @@ namespace arcade::api
          * Thoses values are the standardised RGB values
          * For libraries like ncurses you will need to store the
          * attron values like if possible
-         * 
+         *
          * Values are made using ABGR standard format
          * @see https://en.wikipedia.org/wiki/ABGR_color_space
          *
