@@ -59,17 +59,6 @@ namespace arcade::api
         virtual bool pollEvent(IEvent &event) = 0;
 
         /**
-         * @brief Draws the sprite on the canvas of the current DisplayEngine
-         * at the given position
-         * Should throw an standard arcade::Error if no DisplayEngine is loaded
-         * It should draw on the Core's canvas
-         *
-         * @param sprite The sprite to draw
-         *
-         */
-        virtual void draw(const ISprite &sprite) = 0;
-
-        /**
          * @brief Display the current canvas in the IEngine
          *
          */
