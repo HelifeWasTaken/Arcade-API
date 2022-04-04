@@ -94,7 +94,7 @@ namespace arcade::api
          * @return std::vector<TextInfo>& Reference to the text info array
          *
          */
-        virtual const std::vector<TextInfo>& getTextInfo() const = 0;
+        virtual const std::vector<utils::TextInfo>& getTextInfo() const = 0;
 
         /**
          * @brief Get the Width object
