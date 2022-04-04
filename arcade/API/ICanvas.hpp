@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include "Math.hpp"
 
 namespace arcade::api
 {
@@ -47,6 +48,13 @@ namespace arcade::api
             YELLOW  = 0xFF00FFFF,
             WHITE   = 0xFFFFFFFF
         };
+
+        struct TextInfo
+        {
+            std::string text;
+            math::Vector2 pos;
+            Color color;
+        };
     } // namespace utils
 
     /**
@@ -78,6 +86,12 @@ namespace arcade::api
         virtual void drawText(const math::Vector2 &pos,
                               const std::string &text,
                               const utils::Color color) = 0;
+
+        /**
+         *
+         *
+         *
+         */
 
         /**
          * @brief Get the Width object
