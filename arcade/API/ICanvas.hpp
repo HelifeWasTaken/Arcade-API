@@ -88,10 +88,12 @@ namespace arcade::api
                               const utils::Color color) = 0;
 
         /**
+         * @brief Get the text Info drawn to the canvas
          *
-         *
+         * @return std::vector<TextInfo>& Reference to the text info array
          *
          */
+        virtual const std::vector<TextInfo>& getTextInfo() const = 0;
 
         /**
          * @brief Get the Width object
