@@ -7,13 +7,13 @@ namespace arcade::api
  * @brief Standard window size on X axis
  *
  */
-#define WINDOW_X 800
+#define WINDOW_X 1200
 
 /**
  * @brief Standard window size on Y axis
  *
  */
-#define WINDOW_Y 600
+#define WINDOW_Y 800
 
     /**
      * @brief Forward declaration of arcade::IEvent

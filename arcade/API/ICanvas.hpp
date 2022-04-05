@@ -58,6 +58,29 @@ namespace arcade::api
         };
     } // namespace utils
 
+    class ISubWindow
+    {
+    public:
+        virtual void setPixel(const api::math::Vector2 &pos,
+                      const api::utils::Color color) = 0;
+        virtual void drawText(const api::math::Vector2 &pos, const std::string &text,
+                      const api::utils::Color color) = 0;
+        virtual void drawRect(const api::math::Rectangle &rect,
+                      const api::utils::Color color) = 0;
+        virtual const api::math::Rectangle &getSurface() const = 0;
+
+        virtual void clear() = 0;
+
+        virtual const uint8_t *getPixels() const = 0;
+
+        virtual const std::vector<api::utils::TextInfo>& getTextInfo() const = 0;
+
+        virtual void makeBox() = 0;
+
+        virtual ~ISubWindow() = default;
+        ISubWindow() = default;
+    };
+
     /**
      * @brief API Implementation of ICanvas
      * The canvas is the representation of the abstracted display
@@ -73,7 +96,8 @@ namespace arcade::api
          * @param color The color of the pixel
          *
          */
-        virtual void setPixel(const math::Vector2 &pos,
+        virtual void setPixel(unsigned int window,
+                              const math::Vector2 &pos,
                               const utils::Color color) = 0;
 
         /**
@@ -84,7 +108,8 @@ namespace arcade::api
          * @param color The color of the text
          *
          */
-        virtual void drawText(const math::Vector2 &pos,
+        virtual void drawText(unsigned int window,
+                              const math::Vector2 &pos,
                               const std::string &text,
                               const utils::Color color) = 0;
 
@@ -94,7 +119,7 @@ namespace arcade::api
          * @return std::vector<TextInfo>& Reference to the text info array
          *
          */
-        virtual const std::vector<utils::TextInfo>& getTextInfo() const = 0;
+        virtual const std::vector<utils::TextInfo>& getTextInfo(unsigned int window) const = 0;
 
         /**
          * @brief Get the Width object
@@ -103,7 +128,8 @@ namespace arcade::api
          * @param color The color of the rectangle
          *
          */
-        virtual void drawRect(const math::Rectangle &rect,
+        virtual void drawRect(unsigned int window,
+                              const math::Rectangle &rect,
                               const utils::Color color) = 0;
 
         /**
@@ -112,19 +138,50 @@ namespace arcade::api
          * @return const Vector2& The size of the canvas
          *
          */
-        virtual const math::Vector2 &getSize() const = 0;
+        virtual const math::Rectangle &getSurface(unsigned int window) const = 0;
 
         /**
          * @brief Clears the canvas
          *
          */
-        virtual void clear() = 0;
+        virtual void clear(unsigned int window) = 0;
 
         /**
          * @brief Get pixels
          *
          */
-        virtual const uint8_t *getPixels() const = 0;
+        virtual const uint8_t *getPixels(unsigned int window) const = 0;
+
+        /**
+         * @brief Get the number of windows
+         *
+         */
+        virtual const unsigned int getWindowCount() const = 0;
+
+        /**
+         * @brief Add subwindow
+         * @param x offset of the window
+         * @param y offset of the window
+         * @param w Width of the current window
+         * @param h height of the current window
+         *
+         */
+        virtual void addSubWindow(int x, int y, unsigned int w, unsigned int h) = 0;
+
+        /**
+         * @brief Destroy subWindows
+         * It never destroy the full window
+         *
+         */
+        virtual void destroySubWindows() = 0;
+
+        /**
+         * @brief MakeBox (Draws a box around the given window)
+         *
+         * @param window The window
+         *
+         */
+        virtual void makeBox(unsigned int window) = 0;
 
         /**
          * @brief Destroy the ICanvas object
