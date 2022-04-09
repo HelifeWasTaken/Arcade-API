@@ -109,7 +109,7 @@ extern "C"
  * to delete it
  *
  */
-#define ARCADE_DESTRUCTOR void __arcade_destructor(void *cObject)
+#define ARCADE_DESTRUCTOR void __arcade_destructor(void *cObject, bool cleanup)
 
     /**
      * @brief default c style constructor to load

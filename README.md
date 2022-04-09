@@ -23,3 +23,12 @@ mv $FOLDER/LICENSE $FOLDER/README.md $FOLDER/Doxyfile $FOLDER/.gitignore $FOLDER
 mkdir -p ./arcade/API
 mv $FOLDER/arcade/API.hpp $FOLDER/arcade/API ./arcade
 ```
+
+### Contributors
+
+`mattis.dalleau@epitech.eu`
+`thibault.dufaure-de-citres@epitech.eu`
+`emilie.baunifais@epitech.eu`
+`anthony.vienne@epitech.eu`
+`jonathan.albac@epitech.eu`
+`lucas.miranville@epitech.eu`
