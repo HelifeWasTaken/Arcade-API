@@ -50,6 +50,11 @@ namespace arcade::api
             WHITE   = 0xFFFFFFFF
         };
 
+        /**
+         * @brief Implementation of informations about Texts
+         * It contains the string the position and the color of the text
+         *
+         */
         struct TextInfo
         {
             std::string text;
@@ -61,23 +66,84 @@ namespace arcade::api
     class ISubWindow
     {
     public:
+        /**
+         * @brief Set the Pixel object
+         *
+         * @param pos The position of the pixel
+         * @param color The color of the pixel
+         *
+         */
         virtual void setPixel(const api::math::Vector2 &pos,
                       const api::utils::Color color) = 0;
+        /**
+         * @brief Draw text on the canvas
+         *
+         * @param pos The position of the pixel
+         * @param text The text to draw
+         * @param color The color of the text
+         *
+         */
         virtual void drawText(const api::math::Vector2 &pos, const std::string &text,
                       const api::utils::Color color) = 0;
+
+        /**
+         * @brief Draws the Rect object
+         *
+         * @param rect The rectangle to draw
+         * @param color The color of the rectangle
+         *
+         */
         virtual void drawRect(const api::math::Rectangle &rect,
                       const api::utils::Color color) = 0;
+        /**
+         * @brief Get the Surface object
+         *
+         * @return const Rectangle& The surface of the canvas
+         *
+         */
         virtual const api::math::Rectangle &getSurface() const = 0;
 
+        /**
+         * @brief Clears the canvas
+         *
+         */
         virtual void clear() = 0;
 
+        /**
+         * @brief Get pixels
+         * @return The pixel pointer
+         *
+         */
         virtual const uint8_t *getPixels() const = 0;
 
+        /**
+         * @brief Get the text Info drawn to the canvas
+         *
+         * @param window The window to draw on
+         *
+         * @return std::vector<TextInfo>& Reference to the text info array
+         *
+         */
         virtual const std::vector<api::utils::TextInfo>& getTextInfo() const = 0;
 
+        /**
+         * @brief MakeBox (Draws a box around the given window)
+         *
+         * @param window The window
+         *
+         */
         virtual void makeBox() = 0;
 
+        /**
+         * @brief Destroy the ISubWindow object
+         *
+         */
         virtual ~ISubWindow() = default;
+
+        /**
+         * @brief Construct ISubWindow Object
+         *
+         */
         ISubWindow() = default;
     };
 
@@ -94,6 +160,7 @@ namespace arcade::api
          *
          * @param pos The position of the pixel
          * @param color The color of the pixel
+         * @param window The window to draw on
          *
          */
         virtual void setPixel(unsigned int window,
@@ -106,6 +173,7 @@ namespace arcade::api
          * @param pos The position of the pixel
          * @param text The text to draw
          * @param color The color of the text
+         * @param window The window to draw on
          *
          */
         virtual void drawText(unsigned int window,
@@ -116,14 +184,17 @@ namespace arcade::api
         /**
          * @brief Get the text Info drawn to the canvas
          *
+         * @param window The window to draw on
+         *
          * @return std::vector<TextInfo>& Reference to the text info array
          *
          */
         virtual const std::vector<utils::TextInfo>& getTextInfo(unsigned int window) const = 0;
 
         /**
-         * @brief Get the Width object
+         * @brief Draws the Rect object
          *
+         * @param window The window to draw on
          * @param rect The rectangle to draw
          * @param color The color of the rectangle
          *
@@ -133,21 +204,26 @@ namespace arcade::api
                               const utils::Color color) = 0;
 
         /**
-         * @brief Get the Size object
+         * @brief Get the Surface object
          *
-         * @return const Vector2& The size of the canvas
+         * @param window The window to draw on
+         *
+         * @return const Rectangle& The surface of the canvas
          *
          */
         virtual const math::Rectangle &getSurface(unsigned int window) const = 0;
 
         /**
          * @brief Clears the canvas
+         * @param window The window to draw on
          *
          */
         virtual void clear(unsigned int window) = 0;
 
         /**
          * @brief Get pixels
+         * @param window The window to draw on
+         * @return The pixel pointer
          *
          */
         virtual const uint8_t *getPixels(unsigned int window) const = 0;

@@ -16,6 +16,10 @@ namespace arcade::api
      */
     class IEntity;
 
+    /**
+     * @brief Forward declaration arcade::ICanvas
+     *
+     */
     class ICanvas;
 
     /**

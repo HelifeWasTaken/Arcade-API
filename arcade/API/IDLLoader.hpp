@@ -107,6 +107,7 @@ extern "C"
  *
  * @param cObject Object to static or C style cast
  * to delete it
+ * @param bool cleanup Should cleanup the library
  *
  */
 #define ARCADE_DESTRUCTOR void __arcade_destructor(void *cObject, bool cleanup)
